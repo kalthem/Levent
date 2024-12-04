@@ -131,12 +131,12 @@
 		A9AD5E452D00D444002FDDCF /* Kaltham */ = {
 			isa = PBXGroup;
 			children = (
-				A9AD5E4A2D00D4B2002FDDCF /* Personalize Event Recommendations */,
+				A9FCDB132D00D60700D169E6 /* Personalize Event Recommendations */,
 			);
 			path = Kaltham;
 			sourceTree = "<group>";
 		};
-		A9AD5E4A2D00D4B2002FDDCF /* Personalize Event Recommendations */ = {
+		A9FCDB132D00D60700D169E6 /* Personalize Event Recommendations */ = {
 			isa = PBXGroup;
 			children = (
 			);
