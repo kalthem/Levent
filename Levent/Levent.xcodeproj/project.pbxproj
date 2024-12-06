@@ -16,6 +16,7 @@
 		A9AD5E242D003E51002FDDCF /* LeventTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AD5E222D003E51002FDDCF /* LeventTests.swift */; };
 		A9AD5E282D003E55002FDDCF /* LeventUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AD5E252D003E55002FDDCF /* LeventUITests.swift */; };
 		A9AD5E292D003E55002FDDCF /* LeventUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AD5E262D003E55002FDDCF /* LeventUITestsLaunchTests.swift */; };
+		A9B0397E2D03941000BB3E5D /* PersonalizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B0397D2D0393F100BB3E5D /* PersonalizeViewController.swift */; };
 		A9FCDB192D00D75000D169E6 /* PersonalizedEventRecommendations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9FCDB182D00D75000D169E6 /* PersonalizedEventRecommendations.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,7 @@
 		A9AD5E222D003E51002FDDCF /* LeventTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeventTests.swift; sourceTree = "<group>"; };
 		A9AD5E252D003E55002FDDCF /* LeventUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeventUITests.swift; sourceTree = "<group>"; };
 		A9AD5E262D003E55002FDDCF /* LeventUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeventUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A9B0397D2D0393F100BB3E5D /* PersonalizeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalizeViewController.swift; sourceTree = "<group>"; };
 		A9FCDB182D00D75000D169E6 /* PersonalizedEventRecommendations.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PersonalizedEventRecommendations.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -142,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				A9FCDB182D00D75000D169E6 /* PersonalizedEventRecommendations.storyboard */,
+				A9B0397D2D0393F100BB3E5D /* PersonalizeViewController.swift */,
 			);
 			path = "Personalize Event Recommendations";
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9AD5E1F2D003E4D002FDDCF /* AppDelegate.swift in Sources */,
+				A9B0397E2D03941000BB3E5D /* PersonalizeViewController.swift in Sources */,
 				A9AD5E202D003E4D002FDDCF /* SceneDelegate.swift in Sources */,
 				A9AD5E212D003E4D002FDDCF /* ViewController.swift in Sources */,
 			);
