@@ -16,6 +16,7 @@
 		A9AD5E242D003E51002FDDCF /* LeventTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AD5E222D003E51002FDDCF /* LeventTests.swift */; };
 		A9AD5E282D003E55002FDDCF /* LeventUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AD5E252D003E55002FDDCF /* LeventUITests.swift */; };
 		A9AD5E292D003E55002FDDCF /* LeventUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AD5E262D003E55002FDDCF /* LeventUITestsLaunchTests.swift */; };
+		C34016952D06D93E00664E63 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C34016942D06D93E00664E63 /* Storyboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		A9AD5E222D003E51002FDDCF /* LeventTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeventTests.swift; sourceTree = "<group>"; };
 		A9AD5E252D003E55002FDDCF /* LeventUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeventUITests.swift; sourceTree = "<group>"; };
 		A9AD5E262D003E55002FDDCF /* LeventUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeventUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C34016942D06D93E00664E63 /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +101,10 @@
 		A9AD5E1A2D003E4D002FDDCF /* Levent */ = {
 			isa = PBXGroup;
 			children = (
-				AC4E58332D05B22900F138C9 /* Sabahh */,
 				A9AD5E112D003E4D002FDDCF /* AppDelegate.swift */,
 				A9AD5E122D003E4D002FDDCF /* Assets.xcassets */,
 				A9AD5E132D003E4D002FDDCF /* Info.plist */,
+				C34016932D06D92E00664E63 /* Sabah */,
 				A9AD5E152D003E4D002FDDCF /* LaunchScreen.storyboard */,
 				A9AD5E172D003E4D002FDDCF /* Main.storyboard */,
 				A9AD5E182D003E4D002FDDCF /* SceneDelegate.swift */,
@@ -128,11 +130,12 @@
 			path = LeventUITests;
 			sourceTree = "<group>";
 		};
-		AC4E58332D05B22900F138C9 /* Sabahh */ = {
+		C34016932D06D92E00664E63 /* Sabah */ = {
 			isa = PBXGroup;
 			children = (
+				C34016942D06D93E00664E63 /* Storyboard.storyboard */,
 			);
-			path = Sabahh;
+			path = Sabah;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9AD5E1B2D003E4D002FDDCF /* Assets.xcassets in Resources */,
+				C34016952D06D93E00664E63 /* Storyboard.storyboard in Resources */,
 				A9AD5E1D2D003E4D002FDDCF /* LaunchScreen.storyboard in Resources */,
 				A9AD5E1E2D003E4D002FDDCF /* Main.storyboard in Resources */,
 			);
