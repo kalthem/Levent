@@ -9,7 +9,7 @@ import UIKit
 
 class PersonalizeViewController: UIViewController {
     @IBOutlet weak var btn_SelectGender: UIButton!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
