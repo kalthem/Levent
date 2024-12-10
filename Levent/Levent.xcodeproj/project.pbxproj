@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A90DDE2C2D08BA9800B03EF7 /* Terms&ConditionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90DDE2B2D08BA8E00B03EF7 /* Terms&ConditionsViewController.swift */; };
 		A9AD5E1B2D003E4D002FDDCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9AD5E122D003E4D002FDDCF /* Assets.xcassets */; };
 		A9AD5E1D2D003E4D002FDDCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9AD5E152D003E4D002FDDCF /* LaunchScreen.storyboard */; };
 		A9AD5E1E2D003E4D002FDDCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9AD5E172D003E4D002FDDCF /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A90DDE2B2D08BA8E00B03EF7 /* Terms&ConditionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Terms&ConditionsViewController.swift"; sourceTree = "<group>"; };
 		A9AD5DDD2D003D85002FDDCF /* Levent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Levent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9AD5DF32D003D86002FDDCF /* LeventTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeventTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9AD5DFD2D003D86002FDDCF /* LeventUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeventUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,6 +147,7 @@
 			children = (
 				A9FCDB182D00D75000D169E6 /* PersonalizedEventRecommendations.storyboard */,
 				A9B0397D2D0393F100BB3E5D /* PersonalizeViewController.swift */,
+				A90DDE2B2D08BA8E00B03EF7 /* Terms&ConditionsViewController.swift */,
 			);
 			path = "Personalize Event Recommendations";
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 				A9B0397E2D03941000BB3E5D /* PersonalizeViewController.swift in Sources */,
 				A9AD5E202D003E4D002FDDCF /* SceneDelegate.swift in Sources */,
 				A9AD5E212D003E4D002FDDCF /* ViewController.swift in Sources */,
+				A90DDE2C2D08BA9800B03EF7 /* Terms&ConditionsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

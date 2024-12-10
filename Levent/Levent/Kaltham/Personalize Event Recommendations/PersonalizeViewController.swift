@@ -17,7 +17,6 @@ class PersonalizeViewController: UIViewController {
     }
     
     @IBAction func pdbGenderSelection(_ sender: UIAction) {
-        
         print(sender.title)
         self.btn_SelectGender.setTitle(sender.title, for: .normal)
     }
