@@ -275,37 +275,37 @@
                                             </collectionViewFlowLayout>
                                             <cells>
                                                 <collectionViewCell clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="HL7-gL-2Ub">
-                                                    <rect key="frame" x="0.0" y="0.0" width="367" height="280"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="367" height="257"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="xoc-5P-spc">
-                                                        <rect key="frame" x="0.0" y="0.0" width="367" height="280"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="367" height="257"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <subviews>
-                                                            <progressView contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.75" translatesAutoresizingMaskIntoConstraints="NO" id="FAC-f6-oJv">
-                                                                <rect key="frame" x="108" y="13" width="150" height="4"/>
-                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            </progressView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your intrests" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="muH-vU-q7c">
-                                                                <rect key="frame" x="49" y="34" width="269" height="66"/>
+                                                                <rect key="frame" x="49" y="68" width="269" height="66"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <color key="tintColor" red="0.97647058959999999" green="0.94509804249999996" blue="0.90588235859999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="40"/>
                                                                 <color key="textColor" red="0.1607843041" green="0.21568629149999999" blue="0.40784314269999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 <color key="highlightedColor" name="AccentColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IUd-tj-Ecc">
-                                                                <rect key="frame" x="162" y="173" width="42" height="21"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please select intrests to personalize your experience" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IUd-tj-Ecc">
+                                                                <rect key="frame" x="23" y="108" width="321" height="121"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <nil key="textColor"/>
+                                                                <color key="textColor" red="0.1607843041" green="0.21568629149999999" blue="0.40784314269999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
+                                                            <progressView contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.75" translatesAutoresizingMaskIntoConstraints="NO" id="FAC-f6-oJv">
+                                                                <rect key="frame" x="108" y="32" width="150" height="4"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            </progressView>
                                                         </subviews>
                                                     </collectionViewCellContentView>
-                                                    <size key="customSize" width="367" height="280"/>
+                                                    <size key="customSize" width="367" height="257"/>
                                                 </collectionViewCell>
                                                 <collectionViewCell clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="VFh-2T-7Wk">
-                                                    <rect key="frame" x="0.0" y="290" width="367" height="61"/>
+                                                    <rect key="frame" x="0.0" y="267" width="367" height="61"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="mVq-lq-fsD">
                                                         <rect key="frame" x="0.0" y="0.0" width="367" height="61"/>
@@ -330,7 +330,7 @@
                                                     <size key="customSize" width="367" height="61"/>
                                                 </collectionViewCell>
                                                 <collectionViewCell clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="bdE-yQ-6Ab">
-                                                    <rect key="frame" x="0.0" y="361" width="367" height="61"/>
+                                                    <rect key="frame" x="0.0" y="338" width="367" height="61"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="XXE-YU-0NU">
                                                         <rect key="frame" x="0.0" y="0.0" width="367" height="61"/>
@@ -355,7 +355,7 @@
                                                     <size key="customSize" width="367" height="61"/>
                                                 </collectionViewCell>
                                                 <collectionViewCell clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="GiJ-ru-kjj">
-                                                    <rect key="frame" x="0.0" y="432" width="367" height="61"/>
+                                                    <rect key="frame" x="0.0" y="409" width="367" height="61"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="WIo-hb-hGk">
                                                         <rect key="frame" x="0.0" y="0.0" width="367" height="61"/>
@@ -380,7 +380,7 @@
                                                     <size key="customSize" width="367" height="61"/>
                                                 </collectionViewCell>
                                                 <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="sy9-LW-8XI">
-                                                    <rect key="frame" x="0.0" y="503" width="367" height="61"/>
+                                                    <rect key="frame" x="0.0" y="480" width="367" height="61"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="yoM-F0-sf8">
                                                         <rect key="frame" x="0.0" y="0.0" width="367" height="61"/>
@@ -405,7 +405,7 @@
                                                     <size key="customSize" width="367" height="61"/>
                                                 </collectionViewCell>
                                                 <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="1HQ-XA-axT">
-                                                    <rect key="frame" x="0.0" y="574" width="367" height="61"/>
+                                                    <rect key="frame" x="0.0" y="551" width="367" height="61"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="WEt-SG-PLQ">
                                                         <rect key="frame" x="0.0" y="0.0" width="367" height="61"/>
@@ -445,7 +445,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="omb-QN-oyk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1342.7480916030534" y="768.30985915492965"/>
+            <point key="canvasLocation" x="1341.7910447761194" y="768.19221967963381"/>
         </scene>
         <!--Personalize View Controller-->
         <scene sceneID="fte-fF-FNW">
@@ -600,7 +600,7 @@
                                                     </buttonConfiguration>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Sn-eE-kbc">
-                                                    <rect key="frame" x="316.66666666666674" y="377" width="66.333333333333258" height="39"/>
+                                                    <rect key="frame" x="316.66666666666669" y="377" width="66.333333333333314" height="39"/>
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="plain" image="calendar" catalog="system" title="" buttonSize="large">
                                                         <color key="baseForegroundColor" red="0.1607843041" green="0.21568629149999999" blue="0.40784314269999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
