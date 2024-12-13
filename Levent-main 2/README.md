@@ -1,2 +1,0 @@
-# Levent
-Local Events Organizer 
