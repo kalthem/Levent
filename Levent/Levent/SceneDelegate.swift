@@ -13,10 +13,34 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        let window = UIWindow(windowScene: windowScene)
+        
+        self.window = window
+        
+        let tabBarController = UITabBarController()
+        
+        let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let mainViewController = mainStoryboard.instantiateViewController(withIdentifier: "MainViewController")
+        let mainNavVC = UINavigationController(rootViewController: mainViewController)
+        mainNavVC.title = "Home"
+        mainNavVC.tabBarItem.image = UIImage(named: "home")
+        
+        let usersStoryboard = UIStoryboard(name: "Users", bundle: nil)
+        let usersViewController = usersStoryboard.instantiateViewController(withIdentifier: "UsersViewController")
+        let usersNavVC = UINavigationController(rootViewController: usersViewController)
+        usersNavVC.title = "Users"
+        usersNavVC.tabBarItem.image = UIImage(systemName: "person")
+        
+        let exploreStoryboard = UIStoryboard(name: "Explore", bundle: nil)
+        let exploreViewController = exploreStoryboard.instantiateViewController(withIdentifier: "ExploreViewController")
+        let exploreNavVC = UINavigationController(rootViewController: exploreViewController)
+        exploreNavVC.title = "Explore"
+        exploreNavVC.tabBarItem.image = UIImage(named: "explore")
+        tabBarController.viewControllers = [mainNavVC, usersNavVC, exploreNavVC]
+        
+        window.rootViewController = tabBarController
+        window.makeKeyAndVisible()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
