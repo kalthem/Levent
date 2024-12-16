@@ -13,9 +13,13 @@
 		2050041A2D0C934D000C4249 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205004162D0C934D000C4249 /* ExploreViewController.swift */; };
 		2050041B2D0C934D000C4249 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205004172D0C934D000C4249 /* MainViewController.swift */; };
 		2050041C2D0C934D000C4249 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205004182D0C934D000C4249 /* UsersViewController.swift */; };
-		205004202D0C9350000C4249 /* SlideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2050041E2D0C9350000C4249 /* SlideView.xib */; };
-		205004212D0C9350000C4249 /* SlideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2050041D2D0C9350000C4249 /* SlideView.swift */; };
 		205004232D0C9370000C4249 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 205004222D0C9370000C4249 /* Colors.xcassets */; };
+		2050057E2D0DE239000C4249 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2050057D2D0DE239000C4249 /* UserTableViewCell.swift */; };
+		2050057F2D0DE239000C4249 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2050057B2D0DE239000C4249 /* CardCollectionViewCell.swift */; };
+		205005802D0DE239000C4249 /* CardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2050057C2D0DE239000C4249 /* CardCollectionViewCell.xib */; };
+		205005842D0DE263000C4249 /* EditEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205005822D0DE263000C4249 /* EditEventViewController.swift */; };
+		205005852D0DE263000C4249 /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205005832D0DE263000C4249 /* EventDetailViewController.swift */; };
+		205005862D0DE263000C4249 /* EditEventSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205005812D0DE263000C4249 /* EditEventSuccessViewController.swift */; };
 		A9AD5E1B2D003E4D002FDDCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9AD5E122D003E4D002FDDCF /* Assets.xcassets */; };
 		A9AD5E1D2D003E4D002FDDCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9AD5E152D003E4D002FDDCF /* LaunchScreen.storyboard */; };
 		A9AD5E1F2D003E4D002FDDCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AD5E112D003E4D002FDDCF /* AppDelegate.swift */; };
@@ -49,9 +53,13 @@
 		205004162D0C934D000C4249 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		205004172D0C934D000C4249 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		205004182D0C934D000C4249 /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
-		2050041D2D0C9350000C4249 /* SlideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideView.swift; sourceTree = "<group>"; };
-		2050041E2D0C9350000C4249 /* SlideView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SlideView.xib; sourceTree = "<group>"; };
 		205004222D0C9370000C4249 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		2050057B2D0DE239000C4249 /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
+		2050057C2D0DE239000C4249 /* CardCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCollectionViewCell.xib; sourceTree = "<group>"; };
+		2050057D2D0DE239000C4249 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		205005812D0DE263000C4249 /* EditEventSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEventSuccessViewController.swift; sourceTree = "<group>"; };
+		205005822D0DE263000C4249 /* EditEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEventViewController.swift; sourceTree = "<group>"; };
+		205005832D0DE263000C4249 /* EventDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
 		A9AD5DDD2D003D85002FDDCF /* Levent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Levent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9AD5DF32D003D86002FDDCF /* LeventTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeventTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9AD5DFD2D003D86002FDDCF /* LeventUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeventUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,6 +123,9 @@
 		205004192D0C934D000C4249 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				205005812D0DE263000C4249 /* EditEventSuccessViewController.swift */,
+				205005822D0DE263000C4249 /* EditEventViewController.swift */,
+				205005832D0DE263000C4249 /* EventDetailViewController.swift */,
 				205004162D0C934D000C4249 /* ExploreViewController.swift */,
 				205004172D0C934D000C4249 /* MainViewController.swift */,
 				205004182D0C934D000C4249 /* UsersViewController.swift */,
@@ -125,8 +136,9 @@
 		2050041F2D0C9350000C4249 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				2050041D2D0C9350000C4249 /* SlideView.swift */,
-				2050041E2D0C9350000C4249 /* SlideView.xib */,
+				2050057B2D0DE239000C4249 /* CardCollectionViewCell.swift */,
+				2050057C2D0DE239000C4249 /* CardCollectionViewCell.xib */,
+				2050057D2D0DE239000C4249 /* UserTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -295,7 +307,7 @@
 				205004142D0C9348000C4249 /* Explore.storyboard in Resources */,
 				205004152D0C9348000C4249 /* Main.storyboard in Resources */,
 				A9AD5E1B2D003E4D002FDDCF /* Assets.xcassets in Resources */,
-				205004202D0C9350000C4249 /* SlideView.xib in Resources */,
+				205005802D0DE239000C4249 /* CardCollectionViewCell.xib in Resources */,
 				205004232D0C9370000C4249 /* Colors.xcassets in Resources */,
 				A9AD5E1D2D003E4D002FDDCF /* LaunchScreen.storyboard in Resources */,
 			);
@@ -323,9 +335,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2050041A2D0C934D000C4249 /* ExploreViewController.swift in Sources */,
-				205004212D0C9350000C4249 /* SlideView.swift in Sources */,
 				2050041B2D0C934D000C4249 /* MainViewController.swift in Sources */,
 				2050041C2D0C934D000C4249 /* UsersViewController.swift in Sources */,
+				2050057E2D0DE239000C4249 /* UserTableViewCell.swift in Sources */,
+				205005842D0DE263000C4249 /* EditEventViewController.swift in Sources */,
+				205005852D0DE263000C4249 /* EventDetailViewController.swift in Sources */,
+				205005862D0DE263000C4249 /* EditEventSuccessViewController.swift in Sources */,
+				2050057F2D0DE239000C4249 /* CardCollectionViewCell.swift in Sources */,
 				A9AD5E1F2D003E4D002FDDCF /* AppDelegate.swift in Sources */,
 				A9AD5E202D003E4D002FDDCF /* SceneDelegate.swift in Sources */,
 			);
