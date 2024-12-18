@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A90DDE2C2D08BA9800B03EF7 /* Terms&ConditionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90DDE2B2D08BA8E00B03EF7 /* Terms&ConditionsViewController.swift */; };
+		A94CFF0C2D0E0F4B002EB64B /* PersonalizeIntrestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94CFF0B2D0E0F20002EB64B /* PersonalizeIntrestsViewController.swift */; };
+		A95C174C2D0EFEB4005D0783 /* selectGenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95C174B2D0EFE95005D0783 /* selectGenderViewController.swift */; };
 		A963A7CA2D0B1317002849D7 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = A963A7C92D0B1309002849D7 /* Users.swift */; };
 		A963A7CC2D0B505A002849D7 /* UsersManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A963A7CB2D0B5045002849D7 /* UsersManager.swift */; };
 		A963A7D02D0B510A002849D7 /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A963A7CF2D0B510A002849D7 /* Signup.storyboard */; };
@@ -45,6 +47,8 @@
 
 /* Begin PBXFileReference section */
 		A90DDE2B2D08BA8E00B03EF7 /* Terms&ConditionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Terms&ConditionsViewController.swift"; sourceTree = "<group>"; };
+		A94CFF0B2D0E0F20002EB64B /* PersonalizeIntrestsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalizeIntrestsViewController.swift; sourceTree = "<group>"; };
+		A95C174B2D0EFE95005D0783 /* selectGenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selectGenderViewController.swift; sourceTree = "<group>"; };
 		A963A7C92D0B1309002849D7 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		A963A7CB2D0B5045002849D7 /* UsersManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersManager.swift; sourceTree = "<group>"; };
 		A963A7CF2D0B510A002849D7 /* Signup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signup.storyboard; sourceTree = "<group>"; };
@@ -183,6 +187,8 @@
 			isa = PBXGroup;
 			children = (
 				A9FCDB182D00D75000D169E6 /* PersonalizedEventRecommendations.storyboard */,
+				A95C174B2D0EFE95005D0783 /* selectGenderViewController.swift */,
+				A94CFF0B2D0E0F20002EB64B /* PersonalizeIntrestsViewController.swift */,
 				A963A7C92D0B1309002849D7 /* Users.swift */,
 				A963A7CB2D0B5045002849D7 /* UsersManager.swift */,
 				A9B0397D2D0393F100BB3E5D /* PersonalizeViewController.swift */,
@@ -333,6 +339,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9AD5E1F2D003E4D002FDDCF /* AppDelegate.swift in Sources */,
+				A95C174C2D0EFEB4005D0783 /* selectGenderViewController.swift in Sources */,
+				A94CFF0C2D0E0F4B002EB64B /* PersonalizeIntrestsViewController.swift in Sources */,
 				A9B0397E2D03941000BB3E5D /* PersonalizeViewController.swift in Sources */,
 				A963A7D42D0B5452002849D7 /* SignUpViewController.swift in Sources */,
 				A9AD5E202D003E4D002FDDCF /* SceneDelegate.swift in Sources */,

@@ -10,6 +10,15 @@ import UIKit
 
 import Foundation
 
+class Users: UIViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+    }
+    
+}
+
 enum UserType: String, Codable {
     case admin
     case organizer
