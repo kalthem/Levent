@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54E704F82D1450E300BE3192 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E704F72D1450E300BE3192 /* Colors.swift */; };
 		A9AD5E1B2D003E4D002FDDCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9AD5E122D003E4D002FDDCF /* Assets.xcassets */; };
 		A9AD5E1F2D003E4D002FDDCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AD5E112D003E4D002FDDCF /* AppDelegate.swift */; };
 		A9AD5E202D003E4D002FDDCF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AD5E182D003E4D002FDDCF /* SceneDelegate.swift */; };
@@ -33,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		54E704F72D1450E300BE3192 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		A9AD5DDD2D003D85002FDDCF /* Levent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Levent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9AD5DF32D003D86002FDDCF /* LeventTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeventTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9AD5DFD2D003D86002FDDCF /* LeventUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeventUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,8 +48,9 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		543FBDAD2D0CD6D000AC7F35 /* Views */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Views; sourceTree = "<group>"; };
-		543FBDB02D0CD70600AC7F35 /* Controllers */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Controllers; sourceTree = "<group>"; };
+		54E704EA2D144C4A00BE3192 /* Models */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Models; sourceTree = "<group>"; };
+		54E704EB2D144C4F00BE3192 /* Views */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Views; sourceTree = "<group>"; };
+		54E704EC2D144C5300BE3192 /* Controllers */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Controllers; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,12 +101,14 @@
 		A9AD5E1A2D003E4D002FDDCF /* Levent */ = {
 			isa = PBXGroup;
 			children = (
-				543FBDB02D0CD70600AC7F35 /* Controllers */,
-				543FBDAD2D0CD6D000AC7F35 /* Views */,
+				54E704EC2D144C5300BE3192 /* Controllers */,
+				54E704EB2D144C4F00BE3192 /* Views */,
+				54E704EA2D144C4A00BE3192 /* Models */,
 				A9AD5E112D003E4D002FDDCF /* AppDelegate.swift */,
 				A9AD5E122D003E4D002FDDCF /* Assets.xcassets */,
 				A9AD5E132D003E4D002FDDCF /* Info.plist */,
 				A9AD5E182D003E4D002FDDCF /* SceneDelegate.swift */,
+				54E704F72D1450E300BE3192 /* Colors.swift */,
 			);
 			path = Levent;
 			sourceTree = "<group>";
@@ -141,8 +146,9 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				543FBDAD2D0CD6D000AC7F35 /* Views */,
-				543FBDB02D0CD70600AC7F35 /* Controllers */,
+				54E704EA2D144C4A00BE3192 /* Models */,
+				54E704EB2D144C4F00BE3192 /* Views */,
+				54E704EC2D144C5300BE3192 /* Controllers */,
 			);
 			name = Levent;
 			packageProductDependencies = (
@@ -265,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54E704F82D1450E300BE3192 /* Colors.swift in Sources */,
 				A9AD5E1F2D003E4D002FDDCF /* AppDelegate.swift in Sources */,
 				A9AD5E202D003E4D002FDDCF /* SceneDelegate.swift in Sources */,
 			);
@@ -314,7 +321,7 @@
 				INFOPLIST_FILE = Levent/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = Splash.storyboard;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = SplashScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -342,7 +349,7 @@
 				INFOPLIST_FILE = Levent/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = Splash.storyboard;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = SplashScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;

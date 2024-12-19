@@ -2,39 +2,88 @@
 //  LoginViewController.swift
 //  Levent
 //
-//  Created by Mahdi on 14/12/2024.
+//  Created by Mahdi on 16/12/2024.
 //
+
 import UIKit
 
 class LoginViewController: UIViewController {
-    
+
+    @IBOutlet weak var logoImageView: UIImageView!
+    @IBOutlet weak var appNameLabel: UILabel!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    
-    let demoEmail = "demo@example.com"
-    let demoPassword = "password123"
-    
+    @IBOutlet weak var passwordVisibilityButton: UIButton!
+    @IBOutlet weak var forgotPasswordLabel: UILabel!
+    @IBOutlet weak var signInButton: UIButton!
+    @IBOutlet weak var createAccountLabel: UILabel!
+
+    private var isPasswordVisible = false // Tracks visibility of the password
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupUI()
     }
-    
-    @IBAction func signInTapped(_ sender: UIButton) {
-        guard let email = emailTextField.text, !email.isEmpty,
-              let password = passwordTextField.text, !password.isEmpty else {
-            showAlert(message: "Please enter both email and password")
-            return
-        }
+
+    private func setupUI() {
+        view.backgroundColor = .leventBeige
         
-        if email == demoEmail && password == demoPassword {
-            showAlert(message: "Login Successful!")
-        } else {
-            showAlert(message: "Invalid email or password")
+        logoImageView.image = UIImage(named: "Logo")
+        appNameLabel.text = "Levent"
+        appNameLabel.textColor = .leventBlue
+
+        configureTextField(emailTextField, placeholder: "Email or Phone Number")
+        configureTextField(passwordTextField, placeholder: "Password", isSecure: true)
+
+        passwordVisibilityButton.setImage(UIImage(systemName: "eye"), for: .normal)
+        passwordVisibilityButton.tintColor = .leventBlue
+
+        signInButton.setTitle("Sign In", for: .normal)
+        signInButton.backgroundColor = .leventBlue
+        signInButton.setTitleColor(.leventWhite, for: .normal)
+        signInButton.layer.cornerRadius = 8
+        signInButton.layer.masksToBounds = true
+
+        let forgotPasswordTap = UITapGestureRecognizer(target: self, action: #selector(forgotPasswordTapped))
+        forgotPasswordLabel.isUserInteractionEnabled = true
+        forgotPasswordLabel.addGestureRecognizer(forgotPasswordTap)
+        forgotPasswordLabel.textColor = .leventBlue
+        forgotPasswordLabel.text = "Forgot Your Password?"
+
+        let createAccountTap = UITapGestureRecognizer(target: self, action: #selector(createAccountTapped))
+        createAccountLabel.isUserInteractionEnabled = true
+        createAccountLabel.addGestureRecognizer(createAccountTap)
+        createAccountLabel.textColor = .leventBlue
+        createAccountLabel.text = "Create an account"
+    }
+
+    private func configureTextField(_ textField: UITextField, placeholder: String, isSecure: Bool = false) {
+        textField.placeholder = placeholder
+        textField.isSecureTextEntry = isSecure
+        textField.borderStyle = .roundedRect
+        textField.backgroundColor = .white
+        textField.layer.cornerRadius = 8
+    }
+
+    @IBAction func togglePasswordVisibility(_ sender: UIButton) {
+        isPasswordVisible.toggle()
+        passwordTextField.isSecureTextEntry = !isPasswordVisible
+        let buttonImageName = isPasswordVisible ? "eye.slash" : "eye"
+        passwordVisibilityButton.setImage(UIImage(systemName: buttonImageName), for: .normal)
+    }
+
+    @objc private func createAccountTapped() {
+        let storyboard = UIStoryboard(name: "Register", bundle: nil)
+        if let registerVC = storyboard.instantiateInitialViewController() {
+            navigationController?.pushViewController(registerVC, animated: true)
         }
     }
-    
-    private func showAlert(message: String) {
-        let alert = UIAlertController(title: "Alert", message: message, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .default))
-        present(alert, animated: true)
+
+    @objc private func forgotPasswordTapped() {
+        print("Forgot Password tapped")
+    }
+
+    @IBAction func signInTapped(_ sender: UIButton) {
+        print("Sign In button tapped")
     }
 }
