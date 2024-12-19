@@ -25,13 +25,13 @@ enum UserType: String, Codable {
     case normalUser
 }
 
-struct User {
-    var username: String
-    var email: String
-    var phoneNumber: String
-    var hashedPassword: String
-    var userType: UserType
-}
+//struct User {
+//    var username: String
+//    var email: String
+//    var phoneNumber: String
+//    var hashedPassword: String
+//    var userType: UserType
+//}
 
 
 

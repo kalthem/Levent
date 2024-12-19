@@ -9,10 +9,10 @@ import UIKit
 
 class SignupViewController: UIViewController {
     
-    let usernameTextField = UITextField()
-    let emailTextField = UITextField()
-    let phoneNumberTextField = UITextField()
-    let passwordTextField = UITextField()
+    var usernameTextField = UITextField()
+    var emailTextField = UITextField()
+    var phoneNumberTextField = UITextField()
+    var passwordTextField = UITextField()
     let signupButton = UIButton()
     
     override func viewDidLoad() {

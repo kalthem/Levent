@@ -12,10 +12,13 @@ class TermsAndConditionsViewController: UIViewController {
     
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var acceptButton: UIButton!
-
+    
+    @IBOutlet weak var cbAgree: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTextView()
+        resetCheckbox()
     }
 
     func setupTextView() {
@@ -63,6 +66,26 @@ class TermsAndConditionsViewController: UIViewController {
         textView.text = termsText
         textView.isEditable = false // Prevent editing
     }
+    
+    
+    @IBAction func cbAgreeTapped(_ sender: Any) {
+        cbAgree.isSelected.toggle() // Toggle selection state
+
+                // Check the selection state and update the image
+                if cbAgree.isSelected == true{
+                    cbAgree.setImage(UIImage(systemName: "checkmark.square"), for: .normal) // Set checkmark image
+                    acceptButton.isEnabled = true // Enable accept button if applicable
+                } else {
+                    cbAgree.setImage(UIImage(systemName: "square"), for: .normal) // Set unchecked image
+                    acceptButton.isEnabled = false // Disable accept button if applicable
+                }
+    }
+    
+    private func resetCheckbox() {
+           cbAgree.isSelected = false // Reset selection state
+           cbAgree.setImage(UIImage(systemName: "square"), for: .normal) // Set initial image
+           acceptButton.isEnabled = false // Disable accept button initially
+       }
 
     @IBAction func acceptTapped(_ sender: UIButton) {
         // Dismiss the Terms and Conditions view

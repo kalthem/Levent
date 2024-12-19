@@ -15,6 +15,9 @@
 		A963A7D02D0B510A002849D7 /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A963A7CF2D0B510A002849D7 /* Signup.storyboard */; };
 		A963A7D42D0B5452002849D7 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A963A7D32D0B5433002849D7 /* SignUpViewController.swift */; };
 		A973634C2D096B2F00BBDC52 /* UserProfileSettings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A973634B2D096B2F00BBDC52 /* UserProfileSettings.storyboard */; };
+		A97739AC2D13BC8300ABDFBC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97739AB2D13BC7F00ABDFBC /* User.swift */; };
+		A97739AE2D141C2C00ABDFBC /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97739AD2D141C2400ABDFBC /* SettingsViewController.swift */; };
+		A97739B02D1439DB00ABDFBC /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97739AF2D1439D800ABDFBC /* UserService.swift */; };
 		A9AD5E1B2D003E4D002FDDCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9AD5E122D003E4D002FDDCF /* Assets.xcassets */; };
 		A9AD5E1D2D003E4D002FDDCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9AD5E152D003E4D002FDDCF /* LaunchScreen.storyboard */; };
 		A9AD5E1E2D003E4D002FDDCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9AD5E172D003E4D002FDDCF /* Main.storyboard */; };
@@ -54,6 +57,9 @@
 		A963A7CF2D0B510A002849D7 /* Signup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signup.storyboard; sourceTree = "<group>"; };
 		A963A7D32D0B5433002849D7 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		A973634B2D096B2F00BBDC52 /* UserProfileSettings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserProfileSettings.storyboard; sourceTree = "<group>"; };
+		A97739AB2D13BC7F00ABDFBC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A97739AD2D141C2400ABDFBC /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		A97739AF2D1439D800ABDFBC /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		A9AD5DDD2D003D85002FDDCF /* Levent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Levent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9AD5DF32D003D86002FDDCF /* LeventTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeventTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9AD5DFD2D003D86002FDDCF /* LeventUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeventUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,6 +122,9 @@
 		A97363482D096AE700BBDC52 /* UserProfileSettings */ = {
 			isa = PBXGroup;
 			children = (
+				A97739AD2D141C2400ABDFBC /* SettingsViewController.swift */,
+				A97739AF2D1439D800ABDFBC /* UserService.swift */,
+				A97739AB2D13BC7F00ABDFBC /* User.swift */,
 				A973634B2D096B2F00BBDC52 /* UserProfileSettings.storyboard */,
 			);
 			path = UserProfileSettings;
@@ -344,10 +353,13 @@
 				A9B0397E2D03941000BB3E5D /* PersonalizeViewController.swift in Sources */,
 				A963A7D42D0B5452002849D7 /* SignUpViewController.swift in Sources */,
 				A9AD5E202D003E4D002FDDCF /* SceneDelegate.swift in Sources */,
+				A97739B02D1439DB00ABDFBC /* UserService.swift in Sources */,
 				A9AD5E212D003E4D002FDDCF /* ViewController.swift in Sources */,
 				A963A7CA2D0B1317002849D7 /* Users.swift in Sources */,
 				A90DDE2C2D08BA9800B03EF7 /* Terms&ConditionsViewController.swift in Sources */,
 				A963A7CC2D0B505A002849D7 /* UsersManager.swift in Sources */,
+				A97739AC2D13BC8300ABDFBC /* User.swift in Sources */,
+				A97739AE2D141C2C00ABDFBC /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
