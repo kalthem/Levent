@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="LoginViewController" customModule="Levent" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="rA7-HK-i11">
+                                <rect key="frame" x="114.66666666666669" y="100" width="164" height="164"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="164" id="KKv-WO-SI6"/>
+                                    <constraint firstAttribute="height" constant="164" id="jF4-R0-lKd"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tj8-Pq-ocE">
+                                <rect key="frame" x="64.666666666666686" y="363" width="264" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="HTF-6M-8e0"/>
+                                    <constraint firstAttribute="width" constant="264" id="kYc-1F-Xpq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I86-ft-Ohg">
+                                <rect key="frame" x="64.666666666666686" y="477" width="264" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="TvX-oB-9pu"/>
+                                    <constraint firstAttribute="width" constant="264" id="dnE-u9-nId"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vcm-4c-Onq">
+                                <rect key="frame" x="292.66666666666669" y="481" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="72M-Ei-hgv"/>
+                                    <constraint firstAttribute="width" constant="24" id="Gjc-tQ-fvL"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="eye" catalog="system">
+                                    <color key="baseForegroundColor" name="leventBlue"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="togglePasswordVisibility:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="2vZ-CS-I3y"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot Your Password?" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ly-ql-0v3">
+                                <rect key="frame" x="153" y="517" width="175" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" name="leventBeige"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fon-8m-aB1">
+                                <rect key="frame" x="64.666666666666686" y="634" width="264" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="264" id="e6K-wp-Lvm"/>
+                                    <constraint firstAttribute="height" constant="64" id="tGh-Nv-0b2"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Log In">
+                                    <backgroundConfiguration key="background" cornerRadius="8">
+                                        <color key="backgroundColor" name="leventBlue"/>
+                                    </backgroundConfiguration>
+                                    <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="loginTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="R8F-jJ-T6p"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bAn-sW-bzO">
+                                <rect key="frame" x="125" y="753" width="143" height="39"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Create Account">
+                                    <backgroundConfiguration key="background" cornerRadius="8">
+                                        <color key="backgroundColor" name="leventBeige"/>
+                                    </backgroundConfiguration>
+                                    <color key="baseForegroundColor" name="leventBlue"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="createAccountTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="6pJ-xy-it7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="leventBeige"/>
+                        <constraints>
+                            <constraint firstItem="bAn-sW-bzO" firstAttribute="top" secondItem="Fon-8m-aB1" secondAttribute="bottom" constant="55" id="4xs-jn-W7b"/>
+                            <constraint firstItem="9ly-ql-0v3" firstAttribute="top" secondItem="I86-ft-Ohg" secondAttribute="bottom" constant="8" symbolic="YES" id="5IL-Tx-kje"/>
+                            <constraint firstItem="Fon-8m-aB1" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="6Le-Gl-OVA"/>
+                            <constraint firstItem="rA7-HK-i11" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="CfH-1L-dXR"/>
+                            <constraint firstItem="tj8-Pq-ocE" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Fdk-Og-6X1"/>
+                            <constraint firstItem="tj8-Pq-ocE" firstAttribute="top" secondItem="rA7-HK-i11" secondAttribute="bottom" constant="99" id="I5b-lY-6h2"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="9ly-ql-0v3" secondAttribute="trailing" constant="65" id="LUf-hk-gAu"/>
+                            <constraint firstItem="I86-ft-Ohg" firstAttribute="top" secondItem="tj8-Pq-ocE" secondAttribute="bottom" constant="82" id="Lp5-XU-mbc"/>
+                            <constraint firstItem="9ly-ql-0v3" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="153" id="V9Z-uR-DbA"/>
+                            <constraint firstItem="rA7-HK-i11" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="41" id="XfI-b0-5TS"/>
+                            <constraint firstItem="Fon-8m-aB1" firstAttribute="top" secondItem="9ly-ql-0v3" secondAttribute="bottom" constant="100" id="Y2o-AA-3yp"/>
+                            <constraint firstItem="bAn-sW-bzO" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="maP-Xv-rb9"/>
+                            <constraint firstItem="vcm-4c-Onq" firstAttribute="centerY" secondItem="I86-ft-Ohg" secondAttribute="centerY" id="o1Q-fW-eb0"/>
+                            <constraint firstItem="vcm-4c-Onq" firstAttribute="leading" secondItem="I86-ft-Ohg" secondAttribute="trailing" constant="-36" id="oF3-Jl-n5l"/>
+                            <constraint firstItem="I86-ft-Ohg" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="vK3-vF-dDf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="tj8-Pq-ocE" id="7m2-3h-OuY"/>
+                        <outlet property="passwordTextField" destination="I86-ft-Ohg" id="O0A-9q-Idl"/>
+                        <outlet property="passwordVisibilityButton" destination="vcm-4c-Onq" id="7VY-Kb-lQ6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5.343511450381679" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Logo" width="548" height="548"/>
+        <image name="eye" catalog="system" width="128" height="79"/>
+        <namedColor name="leventBeige">
+            <color red="0.98039215686274506" green="0.94117647058823528" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="leventBlue">
+            <color red="0.14509803921568629" green="0.2196078431372549" blue="0.42352941176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,24 +1,12 @@
-//
-//  LoginViewController.swift
-//  Levent
-//
-//  Created by Mahdi on 16/12/2024.
-//
-
 import UIKit
 
 class LoginViewController: UIViewController {
 
-    @IBOutlet weak var logoImageView: UIImageView!
-    @IBOutlet weak var appNameLabel: UILabel!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var passwordVisibilityButton: UIButton!
-    @IBOutlet weak var forgotPasswordLabel: UILabel!
-    @IBOutlet weak var signInButton: UIButton!
-    @IBOutlet weak var createAccountLabel: UILabel!
 
-    private var isPasswordVisible = false // Tracks visibility of the password
+    private var isPasswordVisible = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,63 +15,48 @@ class LoginViewController: UIViewController {
 
     private func setupUI() {
         view.backgroundColor = .leventBeige
-        
-        logoImageView.image = UIImage(named: "Logo")
-        appNameLabel.text = "Levent"
-        appNameLabel.textColor = .leventBlue
 
-        configureTextField(emailTextField, placeholder: "Email or Phone Number")
-        configureTextField(passwordTextField, placeholder: "Password", isSecure: true)
-
+        // Configure password visibility button
         passwordVisibilityButton.setImage(UIImage(systemName: "eye"), for: .normal)
         passwordVisibilityButton.tintColor = .leventBlue
-
-        signInButton.setTitle("Sign In", for: .normal)
-        signInButton.backgroundColor = .leventBlue
-        signInButton.setTitleColor(.leventWhite, for: .normal)
-        signInButton.layer.cornerRadius = 8
-        signInButton.layer.masksToBounds = true
-
-        let forgotPasswordTap = UITapGestureRecognizer(target: self, action: #selector(forgotPasswordTapped))
-        forgotPasswordLabel.isUserInteractionEnabled = true
-        forgotPasswordLabel.addGestureRecognizer(forgotPasswordTap)
-        forgotPasswordLabel.textColor = .leventBlue
-        forgotPasswordLabel.text = "Forgot Your Password?"
-
-        let createAccountTap = UITapGestureRecognizer(target: self, action: #selector(createAccountTapped))
-        createAccountLabel.isUserInteractionEnabled = true
-        createAccountLabel.addGestureRecognizer(createAccountTap)
-        createAccountLabel.textColor = .leventBlue
-        createAccountLabel.text = "Create an account"
-    }
-
-    private func configureTextField(_ textField: UITextField, placeholder: String, isSecure: Bool = false) {
-        textField.placeholder = placeholder
-        textField.isSecureTextEntry = isSecure
-        textField.borderStyle = .roundedRect
-        textField.backgroundColor = .white
-        textField.layer.cornerRadius = 8
     }
 
     @IBAction func togglePasswordVisibility(_ sender: UIButton) {
         isPasswordVisible.toggle()
         passwordTextField.isSecureTextEntry = !isPasswordVisible
-        let buttonImageName = isPasswordVisible ? "eye.slash" : "eye"
-        passwordVisibilityButton.setImage(UIImage(systemName: buttonImageName), for: .normal)
+        let imageName = isPasswordVisible ? "eye.slash" : "eye"
+        passwordVisibilityButton.setImage(UIImage(systemName: imageName), for: .normal)
     }
 
-    @objc private func createAccountTapped() {
-        let storyboard = UIStoryboard(name: "Register", bundle: nil)
-        if let registerVC = storyboard.instantiateInitialViewController() {
-            navigationController?.pushViewController(registerVC, animated: true)
+    @IBAction func loginTapped(_ sender: UIButton) {
+        guard let email = emailTextField.text, !email.isEmpty,
+              let password = passwordTextField.text, !password.isEmpty else {
+            showAlert(title: "Error", message: "Email and password are required.")
+            return
+        }
+
+        let users = DataStorage.shared.load([User].self, from: "users.json")
+
+        if let user = users.first(where: { $0.email == email && $0.password == password }) {
+            if user.isOrganizer {
+                navigateToStoryboard(named:"OrganizerHome")
+
+            } else {
+                navigateToStoryboard(named:"UserHome")
+
+            }
+        } else {
+            showAlert(title: "Error", message: "Invalid email or password.")
         }
     }
 
-    @objc private func forgotPasswordTapped() {
-        print("Forgot Password tapped")
+    private func showAlert(title: String, message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        present(alert, animated: true, completion: nil)
     }
-
-    @IBAction func signInTapped(_ sender: UIButton) {
-        print("Sign In button tapped")
+    
+    @IBAction func createAccountTapped(_ sender: UIButton) {
+        navigateToStoryboard(named:"Register")
     }
 }

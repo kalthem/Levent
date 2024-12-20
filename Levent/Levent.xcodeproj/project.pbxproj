@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		54E704F82D1450E300BE3192 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E704F72D1450E300BE3192 /* Colors.swift */; };
 		A9AD5E1B2D003E4D002FDDCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9AD5E122D003E4D002FDDCF /* Assets.xcassets */; };
 		A9AD5E1F2D003E4D002FDDCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AD5E112D003E4D002FDDCF /* AppDelegate.swift */; };
 		A9AD5E202D003E4D002FDDCF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AD5E182D003E4D002FDDCF /* SceneDelegate.swift */; };
@@ -34,7 +33,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		54E704F72D1450E300BE3192 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		A9AD5DDD2D003D85002FDDCF /* Levent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Levent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9AD5DF32D003D86002FDDCF /* LeventTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeventTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9AD5DFD2D003D86002FDDCF /* LeventUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeventUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +46,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		54B699D62D158FA8002FD8BC /* Extensions */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Extensions; sourceTree = "<group>"; };
 		54E704EA2D144C4A00BE3192 /* Models */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Models; sourceTree = "<group>"; };
 		54E704EB2D144C4F00BE3192 /* Views */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Views; sourceTree = "<group>"; };
 		54E704EC2D144C5300BE3192 /* Controllers */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Controllers; sourceTree = "<group>"; };
@@ -101,6 +100,7 @@
 		A9AD5E1A2D003E4D002FDDCF /* Levent */ = {
 			isa = PBXGroup;
 			children = (
+				54B699D62D158FA8002FD8BC /* Extensions */,
 				54E704EC2D144C5300BE3192 /* Controllers */,
 				54E704EB2D144C4F00BE3192 /* Views */,
 				54E704EA2D144C4A00BE3192 /* Models */,
@@ -108,7 +108,6 @@
 				A9AD5E122D003E4D002FDDCF /* Assets.xcassets */,
 				A9AD5E132D003E4D002FDDCF /* Info.plist */,
 				A9AD5E182D003E4D002FDDCF /* SceneDelegate.swift */,
-				54E704F72D1450E300BE3192 /* Colors.swift */,
 			);
 			path = Levent;
 			sourceTree = "<group>";
@@ -146,6 +145,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				54B699D62D158FA8002FD8BC /* Extensions */,
 				54E704EA2D144C4A00BE3192 /* Models */,
 				54E704EB2D144C4F00BE3192 /* Views */,
 				54E704EC2D144C5300BE3192 /* Controllers */,
@@ -271,7 +271,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54E704F82D1450E300BE3192 /* Colors.swift in Sources */,
 				A9AD5E1F2D003E4D002FDDCF /* AppDelegate.swift in Sources */,
 				A9AD5E202D003E4D002FDDCF /* SceneDelegate.swift in Sources */,
 			);
