@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EventCell" rowHeight="272" id="Szs-GW-XEq" customClass="EventCell" customModule="Levent" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="707" height="272"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Szs-GW-XEq" id="qJY-VG-eeN">
+                <rect key="frame" x="0.0" y="0.0" width="707" height="272"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NQV-By-7ax" userLabel="CellView">
+                        <rect key="frame" x="5" y="5" width="697" height="220"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THU, DECEMBER 5 2024" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nT2-tO-WDp">
+                                <rect key="frame" x="0.0" y="165.33333333333334" width="98" height="9.6666666666666572"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                <color key="textColor" name="appBlueColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In Whose Name?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wKk-Fj-6hZ">
+                                <rect key="frame" x="0.0" y="180" width="107.33333333333333" height="15.666666666666657"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                <color key="textColor" name="appBlueColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="dummyEventImage" translatesAutoresizingMaskIntoConstraints="NO" id="YHw-tT-1r8">
+                                <rect key="frame" x="0.0" y="0.0" width="697" height="163.33333333333334"/>
+                                <color key="backgroundColor" name="appBackgroundColor"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kanye West" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M0b-BI-v5M">
+                                <rect key="frame" x="0.0" y="200.66666666666666" width="66.333333333333329" height="14.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="appBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YHw-tT-1r8" firstAttribute="leading" secondItem="NQV-By-7ax" secondAttribute="leading" id="2ed-8A-iqN"/>
+                            <constraint firstAttribute="trailing" secondItem="YHw-tT-1r8" secondAttribute="trailing" id="Ept-iR-05F"/>
+                            <constraint firstAttribute="bottom" secondItem="M0b-BI-v5M" secondAttribute="bottom" constant="5" id="OIS-hs-NDT"/>
+                            <constraint firstItem="wKk-Fj-6hZ" firstAttribute="leading" secondItem="NQV-By-7ax" secondAttribute="leading" id="QhD-1T-Mue"/>
+                            <constraint firstAttribute="height" constant="220" id="UnM-aA-8AP"/>
+                            <constraint firstItem="YHw-tT-1r8" firstAttribute="top" secondItem="NQV-By-7ax" secondAttribute="top" id="W4w-JZ-tsO"/>
+                            <constraint firstItem="nT2-tO-WDp" firstAttribute="top" secondItem="YHw-tT-1r8" secondAttribute="bottom" constant="2" id="mBB-yy-2NW"/>
+                            <constraint firstItem="nT2-tO-WDp" firstAttribute="leading" secondItem="NQV-By-7ax" secondAttribute="leading" id="phu-aY-EUv"/>
+                            <constraint firstItem="wKk-Fj-6hZ" firstAttribute="top" secondItem="nT2-tO-WDp" secondAttribute="bottom" constant="5" id="sPT-8s-m8j"/>
+                            <constraint firstItem="M0b-BI-v5M" firstAttribute="leading" secondItem="NQV-By-7ax" secondAttribute="leading" id="y6B-x7-H0v"/>
+                            <constraint firstItem="M0b-BI-v5M" firstAttribute="top" secondItem="wKk-Fj-6hZ" secondAttribute="bottom" constant="5" id="zCA-aa-3gC"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" name="appBackgroundColor"/>
+                <constraints>
+                    <constraint firstItem="NQV-By-7ax" firstAttribute="leading" secondItem="qJY-VG-eeN" secondAttribute="leading" constant="5" id="95S-au-VYp"/>
+                    <constraint firstAttribute="trailing" secondItem="NQV-By-7ax" secondAttribute="trailing" constant="5" id="bbM-pl-1Re"/>
+                    <constraint firstAttribute="bottom" secondItem="NQV-By-7ax" secondAttribute="bottom" constant="5" id="dZd-FR-kOr"/>
+                    <constraint firstItem="NQV-By-7ax" firstAttribute="top" secondItem="qJY-VG-eeN" secondAttribute="top" constant="5" id="qh5-Ur-HH0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cellView" destination="NQV-By-7ax" id="PNj-eo-WlL"/>
+                <outlet property="eventDate" destination="nT2-tO-WDp" id="r2e-Pg-YEd"/>
+                <outlet property="eventHost" destination="M0b-BI-v5M" id="ycG-C1-ybe"/>
+                <outlet property="eventImage" destination="YHw-tT-1r8" id="Ugb-AD-1JI"/>
+                <outlet property="eventName" destination="wKk-Fj-6hZ" id="tb7-uq-4Fo"/>
+                <outlet property="mainView" destination="qJY-VG-eeN" id="jmq-zn-rAQ"/>
+            </connections>
+            <point key="canvasLocation" x="264.8854961832061" y="-178.16901408450704"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="dummyEventImage" width="320" height="203"/>
+        <namedColor name="appBackgroundColor">
+            <color red="0.98431372549019602" green="0.94117647058823528" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="appBlueColor">
+            <color red="0.14509803921568629" green="0.2196078431372549" blue="0.42352941176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
