@@ -11,7 +11,7 @@ class SettingsViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        title = "Profile"
     }
     
     @IBAction func logoutButtonTapped(_ sender: UIButton) {

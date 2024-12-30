@@ -25,9 +25,22 @@ class SelectBirthdayViewController: UITableViewController {
     }
 
     @IBAction func continueButtonTapped(_ sender: UIButton) {
-        selectedBirthday = datePicker.date
-   //     selectedBirthday = datePicker.date
+        
+        // Get the selected date from the date picker
+                selectedBirthday = datePicker.date
+                // Get today's date without time component
+                let today = Calendar.current.startOfDay(for: Date())
+                // Get the selected date without time component
+                let selectedDate = Calendar.current.startOfDay(for: selectedBirthday!)
                 
+                // Check if the selected date is today's date
+        guard selectedDate != today else {
+            // Show an alert if the selected date is today's date
+            let alert = UIAlertController(title: "Error", message: "Please select your birthday.", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            present(alert, animated: true, completion: nil)
+            return
+        }
                 // Load the current user
                 if var user = JSONStorage.shared.loadUser() {
                     // Update the birthday

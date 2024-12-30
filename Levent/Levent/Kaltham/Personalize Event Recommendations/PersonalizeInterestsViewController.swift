@@ -21,35 +21,7 @@ class PersonalizeInterestsViewController: UIViewController {
     }
     
     @IBAction func btnTapped  (_ sender: UIButton)  {
-        //        for button in btnIsTapped {
-        //                if button == sender {
-        //                    if button.backgroundColor == .green {
-        //                        button.backgroundColor = .white
-        //                    } else {
-        //                        button.backgroundColor = .green
-        //                    }
-        //                } else {
-        //                    button.backgroundColor = .white
-        //                }
-        //            }
-        
-        
-        //        if let index = btnIsTapped.firstIndex(of: sender) {
-        //            let button = btnIsTapped[index]
-        //            button.isSelected.toggle()
-        //            if button.isSelected {
-        //                button.backgroundColor = button.tintColor
-        //            }
-        //            else if button.isSelected == false{
-        //                button.backgroundColor = button.backgroundColor
-        //            }
-        //            else {
-        //                button.backgroundColor = button.backgroundColor
-        //            }
-        //
-        //
-        //        }
-        
+       
         guard let interestTitle = sender.titleLabel?.text,
               let interest = Interest(rawValue: interestTitle) else { return }
         

@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		A908F6642D1B030E00C83A0E /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = A908F6632D1B030800C83A0E /* Event.swift */; };
 		A90DDE2C2D08BA9800B03EF7 /* Terms&ConditionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90DDE2B2D08BA8E00B03EF7 /* Terms&ConditionsViewController.swift */; };
+		A918195E2D1D9BD400BF18C9 /* EditNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A918195D2D1D9BC700BF18C9 /* EditNameViewController.swift */; };
+		A91819602D1EE63300BF18C9 /* EditPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A918195F2D1EE62B00BF18C9 /* EditPasswordViewController.swift */; };
+		A91819622D1F17B300BF18C9 /* EditContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91819612D1F17A000BF18C9 /* EditContactViewController.swift */; };
 		A93CEE8D2D189A6B0037A737 /* JSONStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93CEE8C2D189A650037A737 /* JSONStorage.swift */; };
 		A94CFF0C2D0E0F4B002EB64B /* PersonalizeInterestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94CFF0B2D0E0F20002EB64B /* PersonalizeInterestsViewController.swift */; };
 		A95C174C2D0EFEB4005D0783 /* selectGenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95C174B2D0EFE95005D0783 /* selectGenderViewController.swift */; };
@@ -18,6 +21,8 @@
 		A97739AC2D13BC8300ABDFBC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97739AB2D13BC7F00ABDFBC /* User.swift */; };
 		A97739AE2D141C2C00ABDFBC /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97739AD2D141C2400ABDFBC /* EditProfileViewController.swift */; };
 		A97739B02D1439DB00ABDFBC /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97739AF2D1439D800ABDFBC /* SettingsViewController.swift */; };
+		A9804CB42D2318E3004DA3AE /* AdminProfileSettings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9804CB32D2318E3004DA3AE /* AdminProfileSettings.storyboard */; };
+		A9804CB62D231AB1004DA3AE /* OrganizerProfileSettings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9804CB52D231AB1004DA3AE /* OrganizerProfileSettings.storyboard */; };
 		A9AD5E1B2D003E4D002FDDCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9AD5E122D003E4D002FDDCF /* Assets.xcassets */; };
 		A9AD5E1D2D003E4D002FDDCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9AD5E152D003E4D002FDDCF /* LaunchScreen.storyboard */; };
 		A9AD5E1E2D003E4D002FDDCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9AD5E172D003E4D002FDDCF /* Main.storyboard */; };
@@ -27,7 +32,7 @@
 		A9AD5E242D003E51002FDDCF /* LeventTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AD5E222D003E51002FDDCF /* LeventTests.swift */; };
 		A9AD5E282D003E55002FDDCF /* LeventUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AD5E252D003E55002FDDCF /* LeventUITests.swift */; };
 		A9AD5E292D003E55002FDDCF /* LeventUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AD5E262D003E55002FDDCF /* LeventUITestsLaunchTests.swift */; };
-		A9B0397E2D03941000BB3E5D /* PersonalizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B0397D2D0393F100BB3E5D /* PersonalizeViewController.swift */; };
+		A9B0397E2D03941000BB3E5D /* RecommendationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B0397D2D0393F100BB3E5D /* RecommendationsViewController.swift */; };
 		A9BB5B482D1990D7009D97ED /* SelectBirthdayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BB5B472D1990D4009D97ED /* SelectBirthdayViewController.swift */; };
 		A9FCDB192D00D75000D169E6 /* PersonalizedEventRecommendations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9FCDB182D00D75000D169E6 /* PersonalizedEventRecommendations.storyboard */; };
 /* End PBXBuildFile section */
@@ -52,6 +57,9 @@
 /* Begin PBXFileReference section */
 		A908F6632D1B030800C83A0E /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		A90DDE2B2D08BA8E00B03EF7 /* Terms&ConditionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Terms&ConditionsViewController.swift"; sourceTree = "<group>"; };
+		A918195D2D1D9BC700BF18C9 /* EditNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditNameViewController.swift; sourceTree = "<group>"; };
+		A918195F2D1EE62B00BF18C9 /* EditPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPasswordViewController.swift; sourceTree = "<group>"; };
+		A91819612D1F17A000BF18C9 /* EditContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditContactViewController.swift; sourceTree = "<group>"; };
 		A93CEE8C2D189A650037A737 /* JSONStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONStorage.swift; sourceTree = "<group>"; };
 		A94CFF0B2D0E0F20002EB64B /* PersonalizeInterestsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalizeInterestsViewController.swift; sourceTree = "<group>"; };
 		A95C174B2D0EFE95005D0783 /* selectGenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selectGenderViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +69,8 @@
 		A97739AB2D13BC7F00ABDFBC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A97739AD2D141C2400ABDFBC /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		A97739AF2D1439D800ABDFBC /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		A9804CB32D2318E3004DA3AE /* AdminProfileSettings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdminProfileSettings.storyboard; sourceTree = "<group>"; };
+		A9804CB52D231AB1004DA3AE /* OrganizerProfileSettings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OrganizerProfileSettings.storyboard; sourceTree = "<group>"; };
 		A9AD5DDD2D003D85002FDDCF /* Levent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Levent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9AD5DF32D003D86002FDDCF /* LeventTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeventTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9AD5DFD2D003D86002FDDCF /* LeventUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeventUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,7 +84,7 @@
 		A9AD5E222D003E51002FDDCF /* LeventTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeventTests.swift; sourceTree = "<group>"; };
 		A9AD5E252D003E55002FDDCF /* LeventUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeventUITests.swift; sourceTree = "<group>"; };
 		A9AD5E262D003E55002FDDCF /* LeventUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeventUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		A9B0397D2D0393F100BB3E5D /* PersonalizeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalizeViewController.swift; sourceTree = "<group>"; };
+		A9B0397D2D0393F100BB3E5D /* RecommendationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationsViewController.swift; sourceTree = "<group>"; };
 		A9BB5B472D1990D4009D97ED /* SelectBirthdayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectBirthdayViewController.swift; sourceTree = "<group>"; };
 		A9FCDB182D00D75000D169E6 /* PersonalizedEventRecommendations.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PersonalizedEventRecommendations.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -124,11 +134,16 @@
 		A97363482D096AE700BBDC52 /* UserProfileSettings */ = {
 			isa = PBXGroup;
 			children = (
+				A918195D2D1D9BC700BF18C9 /* EditNameViewController.swift */,
+				A91819612D1F17A000BF18C9 /* EditContactViewController.swift */,
+				A918195F2D1EE62B00BF18C9 /* EditPasswordViewController.swift */,
 				A97739AD2D141C2400ABDFBC /* EditProfileViewController.swift */,
 				A97739AF2D1439D800ABDFBC /* SettingsViewController.swift */,
 				A97739AB2D13BC7F00ABDFBC /* User.swift */,
 				A93CEE8C2D189A650037A737 /* JSONStorage.swift */,
+				A9804CB52D231AB1004DA3AE /* OrganizerProfileSettings.storyboard */,
 				A973634B2D096B2F00BBDC52 /* UserProfileSettings.storyboard */,
+				A9804CB32D2318E3004DA3AE /* AdminProfileSettings.storyboard */,
 			);
 			path = UserProfileSettings;
 			sourceTree = "<group>";
@@ -203,7 +218,7 @@
 				A9BB5B472D1990D4009D97ED /* SelectBirthdayViewController.swift */,
 				A95C174B2D0EFE95005D0783 /* selectGenderViewController.swift */,
 				A94CFF0B2D0E0F20002EB64B /* PersonalizeInterestsViewController.swift */,
-				A9B0397D2D0393F100BB3E5D /* PersonalizeViewController.swift */,
+				A9B0397D2D0393F100BB3E5D /* RecommendationsViewController.swift */,
 				A90DDE2B2D08BA8E00B03EF7 /* Terms&ConditionsViewController.swift */,
 			);
 			path = "Personalize Event Recommendations";
@@ -324,6 +339,8 @@
 				A9AD5E1B2D003E4D002FDDCF /* Assets.xcassets in Resources */,
 				A973634C2D096B2F00BBDC52 /* UserProfileSettings.storyboard in Resources */,
 				A9AD5E1D2D003E4D002FDDCF /* LaunchScreen.storyboard in Resources */,
+				A9804CB42D2318E3004DA3AE /* AdminProfileSettings.storyboard in Resources */,
+				A9804CB62D231AB1004DA3AE /* OrganizerProfileSettings.storyboard in Resources */,
 				A963A7D02D0B510A002849D7 /* Signup.storyboard in Resources */,
 				A9AD5E1E2D003E4D002FDDCF /* Main.storyboard in Resources */,
 			);
@@ -354,14 +371,17 @@
 				A9BB5B482D1990D7009D97ED /* SelectBirthdayViewController.swift in Sources */,
 				A95C174C2D0EFEB4005D0783 /* selectGenderViewController.swift in Sources */,
 				A94CFF0C2D0E0F4B002EB64B /* PersonalizeInterestsViewController.swift in Sources */,
-				A9B0397E2D03941000BB3E5D /* PersonalizeViewController.swift in Sources */,
+				A9B0397E2D03941000BB3E5D /* RecommendationsViewController.swift in Sources */,
 				A963A7D42D0B5452002849D7 /* SignUpViewController.swift in Sources */,
+				A91819622D1F17B300BF18C9 /* EditContactViewController.swift in Sources */,
+				A91819602D1EE63300BF18C9 /* EditPasswordViewController.swift in Sources */,
 				A9AD5E202D003E4D002FDDCF /* SceneDelegate.swift in Sources */,
 				A97739B02D1439DB00ABDFBC /* SettingsViewController.swift in Sources */,
 				A9AD5E212D003E4D002FDDCF /* ViewController.swift in Sources */,
 				A93CEE8D2D189A6B0037A737 /* JSONStorage.swift in Sources */,
 				A90DDE2C2D08BA9800B03EF7 /* Terms&ConditionsViewController.swift in Sources */,
 				A97739AC2D13BC8300ABDFBC /* User.swift in Sources */,
+				A918195E2D1D9BD400BF18C9 /* EditNameViewController.swift in Sources */,
 				A908F6642D1B030E00C83A0E /* Event.swift in Sources */,
 				A97739AE2D141C2C00ABDFBC /* EditProfileViewController.swift in Sources */,
 			);

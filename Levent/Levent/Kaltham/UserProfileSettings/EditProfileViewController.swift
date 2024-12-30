@@ -45,23 +45,6 @@ class EditProfileViewController: UITableViewController {
         var user = JSONStorage.shared.loadUser() ?? User(name: "", phoneNumber: "", email: "", password: "", gender: nil)
         user.gender = gender
         JSONStorage.shared.saveUser(user)
-        
-        //             func unwindToSettings(_ unwindSegue: UIStoryboardSegue) {
-        //                if let sourceViewController = unwindSegue.source as? selectGenderViewController,
-        //                   let selectedGender = sourceViewController.selectedGender {
-        //                    genderTextField.text = selectedGender.rawValue
-        //                    // Update the user data
-        //                    var user = JSONStorage.shared.loadUser() ?? User(name: "", phoneNumber: "", email: "", password: "", gender: nil)
-        //                    user.gender = selectedGender
-        //                    JSONStorage.shared.saveUser(user)
-        //                }
-        //            }
-        // Unwind segue method to handle returning to this view controller
-        //        @IBAction func unwindToEditProfile(_ unwindSegue: UIStoryboardSegue) {
-        //           // if unwindSegue.identifier == "unwindToEditProfile" {
-        //                loadUserProfile()
-        //            }
-        //
     }
         
         @IBAction func unwindToEditProfile(_ unwindSegue: UIStoryboardSegue) {
