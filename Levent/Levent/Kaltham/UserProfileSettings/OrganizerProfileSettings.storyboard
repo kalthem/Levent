@@ -258,7 +258,7 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Continue"/>
                                 <connections>
                                     <action selector="validatePassword:" destination="P5r-ZC-S1Q" eventType="touchUpInside" id="b0Q-NT-vTj"/>
-                                    <segue destination="yVb-hA-yzv" kind="show" id="uUp-X5-Hn0"/>
+                                    <segue destination="yVb-hA-yzv" kind="show" identifier="toNewPasswordView" id="uUp-X5-Hn0"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Your Password" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RRG-7f-cYa">
