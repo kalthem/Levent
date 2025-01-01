@@ -1,0 +1,735 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 63;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A908F6642D1B030E00C83A0E /* PersonalizeEventRecommendationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A908F6632D1B030800C83A0E /* PersonalizeEventRecommendationsViewController.swift */; };
+		A9092BC52D248AB100FF3FAF /* EventCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9092BC42D248AB100FF3FAF /* EventCollectionViewCell.xib */; };
+		A9092BC72D248D8800FF3FAF /* EventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9092BC62D248D8800FF3FAF /* EventTableViewCell.xib */; };
+		A90DDE2C2D08BA9800B03EF7 /* Terms&ConditionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90DDE2B2D08BA8E00B03EF7 /* Terms&ConditionsViewController.swift */; };
+		A918195E2D1D9BD400BF18C9 /* EditNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A918195D2D1D9BC700BF18C9 /* EditNameViewController.swift */; };
+		A91819602D1EE63300BF18C9 /* EditPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A918195F2D1EE62B00BF18C9 /* EditPasswordViewController.swift */; };
+		A91819622D1F17B300BF18C9 /* EditContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91819612D1F17A000BF18C9 /* EditContactViewController.swift */; };
+		A93CEE8D2D189A6B0037A737 /* JSONStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93CEE8C2D189A650037A737 /* JSONStorage.swift */; };
+		A94CFF0C2D0E0F4B002EB64B /* PersonalizeInterestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94CFF0B2D0E0F20002EB64B /* PersonalizeInterestsViewController.swift */; };
+		A95C174C2D0EFEB4005D0783 /* selectGenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95C174B2D0EFE95005D0783 /* selectGenderViewController.swift */; };
+		A963A7D02D0B510A002849D7 /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A963A7CF2D0B510A002849D7 /* Signup.storyboard */; };
+		A963A7D42D0B5452002849D7 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A963A7D32D0B5433002849D7 /* SignUpViewController.swift */; };
+		A973634C2D096B2F00BBDC52 /* UserProfileSettings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A973634B2D096B2F00BBDC52 /* UserProfileSettings.storyboard */; };
+		A97739AC2D13BC8300ABDFBC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97739AB2D13BC7F00ABDFBC /* User.swift */; };
+		A97739AE2D141C2C00ABDFBC /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97739AD2D141C2400ABDFBC /* EditProfileViewController.swift */; };
+		A97739B02D1439DB00ABDFBC /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97739AF2D1439D800ABDFBC /* SettingsViewController.swift */; };
+		A9804CB42D2318E3004DA3AE /* AdminProfileSettings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9804CB32D2318E3004DA3AE /* AdminProfileSettings.storyboard */; };
+		A9804CB62D231AB1004DA3AE /* OrganizerProfileSettings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9804CB52D231AB1004DA3AE /* OrganizerProfileSettings.storyboard */; };
+		A9AD5E1B2D003E4D002FDDCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9AD5E122D003E4D002FDDCF /* Assets.xcassets */; };
+		A9AD5E1D2D003E4D002FDDCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9AD5E152D003E4D002FDDCF /* LaunchScreen.storyboard */; };
+		A9AD5E1E2D003E4D002FDDCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9AD5E172D003E4D002FDDCF /* Main.storyboard */; };
+		A9AD5E1F2D003E4D002FDDCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AD5E112D003E4D002FDDCF /* AppDelegate.swift */; };
+		A9AD5E202D003E4D002FDDCF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AD5E182D003E4D002FDDCF /* SceneDelegate.swift */; };
+		A9AD5E212D003E4D002FDDCF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AD5E192D003E4D002FDDCF /* ViewController.swift */; };
+		A9AD5E242D003E51002FDDCF /* LeventTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AD5E222D003E51002FDDCF /* LeventTests.swift */; };
+		A9AD5E282D003E55002FDDCF /* LeventUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AD5E252D003E55002FDDCF /* LeventUITests.swift */; };
+		A9AD5E292D003E55002FDDCF /* LeventUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AD5E262D003E55002FDDCF /* LeventUITestsLaunchTests.swift */; };
+		A9B0397E2D03941000BB3E5D /* RecommendationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B0397D2D0393F100BB3E5D /* RecommendationsViewController.swift */; };
+		A9BB5B482D1990D7009D97ED /* SelectBirthdayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BB5B472D1990D4009D97ED /* SelectBirthdayViewController.swift */; };
+		A9FCDB192D00D75000D169E6 /* PersonalizedEventRecommendations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9FCDB182D00D75000D169E6 /* PersonalizedEventRecommendations.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A9AD5DF42D003D86002FDDCF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9AD5DD52D003D85002FDDCF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9AD5DDC2D003D85002FDDCF;
+			remoteInfo = Levent;
+		};
+		A9AD5DFE2D003D86002FDDCF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9AD5DD52D003D85002FDDCF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9AD5DDC2D003D85002FDDCF;
+			remoteInfo = Levent;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A908F6632D1B030800C83A0E /* PersonalizeEventRecommendationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalizeEventRecommendationsViewController.swift; sourceTree = "<group>"; };
+		A9092BC42D248AB100FF3FAF /* EventCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventCollectionViewCell.xib; sourceTree = "<group>"; };
+		A9092BC62D248D8800FF3FAF /* EventTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventTableViewCell.xib; sourceTree = "<group>"; };
+		A90DDE2B2D08BA8E00B03EF7 /* Terms&ConditionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Terms&ConditionsViewController.swift"; sourceTree = "<group>"; };
+		A918195D2D1D9BC700BF18C9 /* EditNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditNameViewController.swift; sourceTree = "<group>"; };
+		A918195F2D1EE62B00BF18C9 /* EditPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPasswordViewController.swift; sourceTree = "<group>"; };
+		A91819612D1F17A000BF18C9 /* EditContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditContactViewController.swift; sourceTree = "<group>"; };
+		A93CEE8C2D189A650037A737 /* JSONStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONStorage.swift; sourceTree = "<group>"; };
+		A94CFF0B2D0E0F20002EB64B /* PersonalizeInterestsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalizeInterestsViewController.swift; sourceTree = "<group>"; };
+		A95C174B2D0EFE95005D0783 /* selectGenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selectGenderViewController.swift; sourceTree = "<group>"; };
+		A963A7CF2D0B510A002849D7 /* Signup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signup.storyboard; sourceTree = "<group>"; };
+		A963A7D32D0B5433002849D7 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		A973634B2D096B2F00BBDC52 /* UserProfileSettings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserProfileSettings.storyboard; sourceTree = "<group>"; };
+		A97739AB2D13BC7F00ABDFBC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A97739AD2D141C2400ABDFBC /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		A97739AF2D1439D800ABDFBC /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		A9804CB32D2318E3004DA3AE /* AdminProfileSettings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdminProfileSettings.storyboard; sourceTree = "<group>"; };
+		A9804CB52D231AB1004DA3AE /* OrganizerProfileSettings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OrganizerProfileSettings.storyboard; sourceTree = "<group>"; };
+		A9AD5DDD2D003D85002FDDCF /* Levent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Levent.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9AD5DF32D003D86002FDDCF /* LeventTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeventTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9AD5DFD2D003D86002FDDCF /* LeventUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeventUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9AD5E112D003E4D002FDDCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A9AD5E122D003E4D002FDDCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A9AD5E132D003E4D002FDDCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9AD5E142D003E4D002FDDCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A9AD5E162D003E4D002FDDCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A9AD5E182D003E4D002FDDCF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A9AD5E192D003E4D002FDDCF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A9AD5E222D003E51002FDDCF /* LeventTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeventTests.swift; sourceTree = "<group>"; };
+		A9AD5E252D003E55002FDDCF /* LeventUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeventUITests.swift; sourceTree = "<group>"; };
+		A9AD5E262D003E55002FDDCF /* LeventUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeventUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A9B0397D2D0393F100BB3E5D /* RecommendationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationsViewController.swift; sourceTree = "<group>"; };
+		A9BB5B472D1990D4009D97ED /* SelectBirthdayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectBirthdayViewController.swift; sourceTree = "<group>"; };
+		A9FCDB182D00D75000D169E6 /* PersonalizedEventRecommendations.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PersonalizedEventRecommendations.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A9AD5DDA2D003D85002FDDCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9AD5DF02D003D86002FDDCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9AD5DFA2D003D86002FDDCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A963A7CD2D0B50C1002849D7 /* FeaturesTest */ = {
+			isa = PBXGroup;
+			children = (
+				A9B0397D2D0393F100BB3E5D /* RecommendationsViewController.swift */,
+				A963A7CE2D0B50D7002849D7 /* SignUp */,
+			);
+			path = FeaturesTest;
+			sourceTree = "<group>";
+		};
+		A963A7CE2D0B50D7002849D7 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				A963A7CF2D0B510A002849D7 /* Signup.storyboard */,
+				A963A7D32D0B5433002849D7 /* SignUpViewController.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		A97363482D096AE700BBDC52 /* UserProfileSettings */ = {
+			isa = PBXGroup;
+			children = (
+				A918195D2D1D9BC700BF18C9 /* EditNameViewController.swift */,
+				A91819612D1F17A000BF18C9 /* EditContactViewController.swift */,
+				A918195F2D1EE62B00BF18C9 /* EditPasswordViewController.swift */,
+				A97739AD2D141C2400ABDFBC /* EditProfileViewController.swift */,
+				A97739AF2D1439D800ABDFBC /* SettingsViewController.swift */,
+				A97739AB2D13BC7F00ABDFBC /* User.swift */,
+				A93CEE8C2D189A650037A737 /* JSONStorage.swift */,
+				A9804CB52D231AB1004DA3AE /* OrganizerProfileSettings.storyboard */,
+				A973634B2D096B2F00BBDC52 /* UserProfileSettings.storyboard */,
+				A9804CB32D2318E3004DA3AE /* AdminProfileSettings.storyboard */,
+			);
+			path = UserProfileSettings;
+			sourceTree = "<group>";
+		};
+		A9AD5DD42D003D85002FDDCF = {
+			isa = PBXGroup;
+			children = (
+				A9AD5E1A2D003E4D002FDDCF /* Levent */,
+				A9AD5E232D003E51002FDDCF /* LeventTests */,
+				A9AD5E272D003E55002FDDCF /* LeventUITests */,
+				A9AD5DDE2D003D85002FDDCF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A9AD5DDE2D003D85002FDDCF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9AD5DDD2D003D85002FDDCF /* Levent.app */,
+				A9AD5DF32D003D86002FDDCF /* LeventTests.xctest */,
+				A9AD5DFD2D003D86002FDDCF /* LeventUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A9AD5E1A2D003E4D002FDDCF /* Levent */ = {
+			isa = PBXGroup;
+			children = (
+				A9AD5E112D003E4D002FDDCF /* AppDelegate.swift */,
+				A9AD5E122D003E4D002FDDCF /* Assets.xcassets */,
+				A9AD5E132D003E4D002FDDCF /* Info.plist */,
+				A9AD5E452D00D444002FDDCF /* Kaltham */,
+				A9AD5E152D003E4D002FDDCF /* LaunchScreen.storyboard */,
+				A9AD5E172D003E4D002FDDCF /* Main.storyboard */,
+				A9AD5E182D003E4D002FDDCF /* SceneDelegate.swift */,
+				A9AD5E192D003E4D002FDDCF /* ViewController.swift */,
+			);
+			path = Levent;
+			sourceTree = "<group>";
+		};
+		A9AD5E232D003E51002FDDCF /* LeventTests */ = {
+			isa = PBXGroup;
+			children = (
+				A9AD5E222D003E51002FDDCF /* LeventTests.swift */,
+			);
+			path = LeventTests;
+			sourceTree = "<group>";
+		};
+		A9AD5E272D003E55002FDDCF /* LeventUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A9AD5E252D003E55002FDDCF /* LeventUITests.swift */,
+				A9AD5E262D003E55002FDDCF /* LeventUITestsLaunchTests.swift */,
+			);
+			path = LeventUITests;
+			sourceTree = "<group>";
+		};
+		A9AD5E452D00D444002FDDCF /* Kaltham */ = {
+			isa = PBXGroup;
+			children = (
+				A963A7CD2D0B50C1002849D7 /* FeaturesTest */,
+				A97363482D096AE700BBDC52 /* UserProfileSettings */,
+				A9FCDB172D00D71E00D169E6 /* Personalize Event Recommendations */,
+			);
+			path = Kaltham;
+			sourceTree = "<group>";
+		};
+		A9FCDB172D00D71E00D169E6 /* Personalize Event Recommendations */ = {
+			isa = PBXGroup;
+			children = (
+				A9FCDB182D00D75000D169E6 /* PersonalizedEventRecommendations.storyboard */,
+				A908F6632D1B030800C83A0E /* PersonalizeEventRecommendationsViewController.swift */,
+				A9092BC62D248D8800FF3FAF /* EventTableViewCell.xib */,
+				A9092BC42D248AB100FF3FAF /* EventCollectionViewCell.xib */,
+				A9BB5B472D1990D4009D97ED /* SelectBirthdayViewController.swift */,
+				A95C174B2D0EFE95005D0783 /* selectGenderViewController.swift */,
+				A94CFF0B2D0E0F20002EB64B /* PersonalizeInterestsViewController.swift */,
+				A90DDE2B2D08BA8E00B03EF7 /* Terms&ConditionsViewController.swift */,
+			);
+			path = "Personalize Event Recommendations";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A9AD5DDC2D003D85002FDDCF /* Levent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9AD5E062D003D86002FDDCF /* Build configuration list for PBXNativeTarget "Levent" */;
+			buildPhases = (
+				A9AD5DD92D003D85002FDDCF /* Sources */,
+				A9AD5DDA2D003D85002FDDCF /* Frameworks */,
+				A9AD5DDB2D003D85002FDDCF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Levent;
+			packageProductDependencies = (
+			);
+			productName = Levent;
+			productReference = A9AD5DDD2D003D85002FDDCF /* Levent.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A9AD5DF22D003D86002FDDCF /* LeventTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9AD5E0B2D003D86002FDDCF /* Build configuration list for PBXNativeTarget "LeventTests" */;
+			buildPhases = (
+				A9AD5DEF2D003D86002FDDCF /* Sources */,
+				A9AD5DF02D003D86002FDDCF /* Frameworks */,
+				A9AD5DF12D003D86002FDDCF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9AD5DF52D003D86002FDDCF /* PBXTargetDependency */,
+			);
+			name = LeventTests;
+			packageProductDependencies = (
+			);
+			productName = LeventTests;
+			productReference = A9AD5DF32D003D86002FDDCF /* LeventTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A9AD5DFC2D003D86002FDDCF /* LeventUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9AD5E0E2D003D86002FDDCF /* Build configuration list for PBXNativeTarget "LeventUITests" */;
+			buildPhases = (
+				A9AD5DF92D003D86002FDDCF /* Sources */,
+				A9AD5DFA2D003D86002FDDCF /* Frameworks */,
+				A9AD5DFB2D003D86002FDDCF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9AD5DFF2D003D86002FDDCF /* PBXTargetDependency */,
+			);
+			name = LeventUITests;
+			packageProductDependencies = (
+			);
+			productName = LeventUITests;
+			productReference = A9AD5DFD2D003D86002FDDCF /* LeventUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9AD5DD52D003D85002FDDCF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1610;
+				LastUpgradeCheck = 1610;
+				TargetAttributes = {
+					A9AD5DDC2D003D85002FDDCF = {
+						CreatedOnToolsVersion = 16.1;
+					};
+					A9AD5DF22D003D86002FDDCF = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = A9AD5DDC2D003D85002FDDCF;
+					};
+					A9AD5DFC2D003D86002FDDCF = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = A9AD5DDC2D003D85002FDDCF;
+					};
+				};
+			};
+			buildConfigurationList = A9AD5DD82D003D85002FDDCF /* Build configuration list for PBXProject "Levent" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A9AD5DD42D003D85002FDDCF;
+			minimizedProjectReferenceProxies = 1;
+			productRefGroup = A9AD5DDE2D003D85002FDDCF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9AD5DDC2D003D85002FDDCF /* Levent */,
+				A9AD5DF22D003D86002FDDCF /* LeventTests */,
+				A9AD5DFC2D003D86002FDDCF /* LeventUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A9AD5DDB2D003D85002FDDCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9092BC72D248D8800FF3FAF /* EventTableViewCell.xib in Resources */,
+				A9FCDB192D00D75000D169E6 /* PersonalizedEventRecommendations.storyboard in Resources */,
+				A9AD5E1B2D003E4D002FDDCF /* Assets.xcassets in Resources */,
+				A973634C2D096B2F00BBDC52 /* UserProfileSettings.storyboard in Resources */,
+				A9AD5E1D2D003E4D002FDDCF /* LaunchScreen.storyboard in Resources */,
+				A9804CB42D2318E3004DA3AE /* AdminProfileSettings.storyboard in Resources */,
+				A9804CB62D231AB1004DA3AE /* OrganizerProfileSettings.storyboard in Resources */,
+				A963A7D02D0B510A002849D7 /* Signup.storyboard in Resources */,
+				A9AD5E1E2D003E4D002FDDCF /* Main.storyboard in Resources */,
+				A9092BC52D248AB100FF3FAF /* EventCollectionViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9AD5DF12D003D86002FDDCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9AD5DFB2D003D86002FDDCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A9AD5DD92D003D85002FDDCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9AD5E1F2D003E4D002FDDCF /* AppDelegate.swift in Sources */,
+				A9BB5B482D1990D7009D97ED /* SelectBirthdayViewController.swift in Sources */,
+				A95C174C2D0EFEB4005D0783 /* selectGenderViewController.swift in Sources */,
+				A94CFF0C2D0E0F4B002EB64B /* PersonalizeInterestsViewController.swift in Sources */,
+				A9B0397E2D03941000BB3E5D /* RecommendationsViewController.swift in Sources */,
+				A963A7D42D0B5452002849D7 /* SignUpViewController.swift in Sources */,
+				A91819622D1F17B300BF18C9 /* EditContactViewController.swift in Sources */,
+				A91819602D1EE63300BF18C9 /* EditPasswordViewController.swift in Sources */,
+				A9AD5E202D003E4D002FDDCF /* SceneDelegate.swift in Sources */,
+				A97739B02D1439DB00ABDFBC /* SettingsViewController.swift in Sources */,
+				A9AD5E212D003E4D002FDDCF /* ViewController.swift in Sources */,
+				A93CEE8D2D189A6B0037A737 /* JSONStorage.swift in Sources */,
+				A90DDE2C2D08BA9800B03EF7 /* Terms&ConditionsViewController.swift in Sources */,
+				A97739AC2D13BC8300ABDFBC /* User.swift in Sources */,
+				A918195E2D1D9BD400BF18C9 /* EditNameViewController.swift in Sources */,
+				A908F6642D1B030E00C83A0E /* PersonalizeEventRecommendationsViewController.swift in Sources */,
+				A97739AE2D141C2C00ABDFBC /* EditProfileViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9AD5DEF2D003D86002FDDCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9AD5E242D003E51002FDDCF /* LeventTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9AD5DF92D003D86002FDDCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9AD5E282D003E55002FDDCF /* LeventUITests.swift in Sources */,
+				A9AD5E292D003E55002FDDCF /* LeventUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A9AD5DF52D003D86002FDDCF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9AD5DDC2D003D85002FDDCF /* Levent */;
+			targetProxy = A9AD5DF42D003D86002FDDCF /* PBXContainerItemProxy */;
+		};
+		A9AD5DFF2D003D86002FDDCF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9AD5DDC2D003D85002FDDCF /* Levent */;
+			targetProxy = A9AD5DFE2D003D86002FDDCF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A9AD5E152D003E4D002FDDCF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9AD5E142D003E4D002FDDCF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A9AD5E172D003E4D002FDDCF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9AD5E162D003E4D002FDDCF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A9AD5E072D003D86002FDDCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Levent/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = PersonalizedEventRecommendations.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AccountSettings.Levent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A9AD5E082D003D86002FDDCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Levent/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = PersonalizedEventRecommendations.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AccountSettings.Levent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A9AD5E092D003D86002FDDCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A9AD5E0A2D003D86002FDDCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A9AD5E0C2D003D86002FDDCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AccountSettings.LeventTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Levent.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Levent";
+			};
+			name = Debug;
+		};
+		A9AD5E0D2D003D86002FDDCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AccountSettings.LeventTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Levent.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Levent";
+			};
+			name = Release;
+		};
+		A9AD5E0F2D003D86002FDDCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AccountSettings.LeventUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Levent;
+			};
+			name = Debug;
+		};
+		A9AD5E102D003D86002FDDCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AccountSettings.LeventUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Levent;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A9AD5DD82D003D85002FDDCF /* Build configuration list for PBXProject "Levent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9AD5E092D003D86002FDDCF /* Debug */,
+				A9AD5E0A2D003D86002FDDCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9AD5E062D003D86002FDDCF /* Build configuration list for PBXNativeTarget "Levent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9AD5E072D003D86002FDDCF /* Debug */,
+				A9AD5E082D003D86002FDDCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9AD5E0B2D003D86002FDDCF /* Build configuration list for PBXNativeTarget "LeventTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9AD5E0C2D003D86002FDDCF /* Debug */,
+				A9AD5E0D2D003D86002FDDCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9AD5E0E2D003D86002FDDCF /* Build configuration list for PBXNativeTarget "LeventUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9AD5E0F2D003D86002FDDCF /* Debug */,
+				A9AD5E102D003D86002FDDCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A9AD5DD52D003D85002FDDCF /* Project object */;
+}
