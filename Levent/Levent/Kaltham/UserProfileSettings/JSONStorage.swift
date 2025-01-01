@@ -14,7 +14,7 @@ class JSONStorage {
         let documentDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
         return documentDirectory.appendingPathComponent(filename)
     }
-
+   
     func saveUser(_ user: User) {
         do {
             let data = try JSONEncoder().encode(user)
@@ -35,6 +35,22 @@ class JSONStorage {
     }
 
     func createMockData() {
+        // Function to get URL of a JSON file in the document directory
+        func getDocumentDirectoryFileURL(fileName: String) -> URL? {
+            let fileManager = FileManager.default
+            if let documentDirectory = fileManager.urls(for: .documentDirectory, in: .userDomainMask).first {
+                return documentDirectory.appendingPathComponent(fileName)
+            }
+            return nil
+        }
+
+        // Example usage
+        if let fileURL = getDocumentDirectoryFileURL(fileName: "user.json") {
+            print("File URL: \(fileURL)")
+        } else {
+            print("File not found in document directory")
+        }
+
         let mockUser = User(
             name: "John Doe",
             phoneNumber: "123-456-7890",

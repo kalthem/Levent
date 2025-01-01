@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A908F6642D1B030E00C83A0E /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = A908F6632D1B030800C83A0E /* Event.swift */; };
+		A908F6642D1B030E00C83A0E /* PersonalizeEventRecommendationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A908F6632D1B030800C83A0E /* PersonalizeEventRecommendationsViewController.swift */; };
+		A9092BC52D248AB100FF3FAF /* EventCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9092BC42D248AB100FF3FAF /* EventCollectionViewCell.xib */; };
+		A9092BC72D248D8800FF3FAF /* EventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9092BC62D248D8800FF3FAF /* EventTableViewCell.xib */; };
 		A90DDE2C2D08BA9800B03EF7 /* Terms&ConditionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90DDE2B2D08BA8E00B03EF7 /* Terms&ConditionsViewController.swift */; };
 		A918195E2D1D9BD400BF18C9 /* EditNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A918195D2D1D9BC700BF18C9 /* EditNameViewController.swift */; };
 		A91819602D1EE63300BF18C9 /* EditPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A918195F2D1EE62B00BF18C9 /* EditPasswordViewController.swift */; };
@@ -55,7 +57,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A908F6632D1B030800C83A0E /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		A908F6632D1B030800C83A0E /* PersonalizeEventRecommendationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalizeEventRecommendationsViewController.swift; sourceTree = "<group>"; };
+		A9092BC42D248AB100FF3FAF /* EventCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventCollectionViewCell.xib; sourceTree = "<group>"; };
+		A9092BC62D248D8800FF3FAF /* EventTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventTableViewCell.xib; sourceTree = "<group>"; };
 		A90DDE2B2D08BA8E00B03EF7 /* Terms&ConditionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Terms&ConditionsViewController.swift"; sourceTree = "<group>"; };
 		A918195D2D1D9BC700BF18C9 /* EditNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditNameViewController.swift; sourceTree = "<group>"; };
 		A918195F2D1EE62B00BF18C9 /* EditPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPasswordViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +121,7 @@
 		A963A7CD2D0B50C1002849D7 /* FeaturesTest */ = {
 			isa = PBXGroup;
 			children = (
+				A9B0397D2D0393F100BB3E5D /* RecommendationsViewController.swift */,
 				A963A7CE2D0B50D7002849D7 /* SignUp */,
 			);
 			path = FeaturesTest;
@@ -214,11 +219,12 @@
 			isa = PBXGroup;
 			children = (
 				A9FCDB182D00D75000D169E6 /* PersonalizedEventRecommendations.storyboard */,
-				A908F6632D1B030800C83A0E /* Event.swift */,
+				A908F6632D1B030800C83A0E /* PersonalizeEventRecommendationsViewController.swift */,
+				A9092BC62D248D8800FF3FAF /* EventTableViewCell.xib */,
+				A9092BC42D248AB100FF3FAF /* EventCollectionViewCell.xib */,
 				A9BB5B472D1990D4009D97ED /* SelectBirthdayViewController.swift */,
 				A95C174B2D0EFE95005D0783 /* selectGenderViewController.swift */,
 				A94CFF0B2D0E0F20002EB64B /* PersonalizeInterestsViewController.swift */,
-				A9B0397D2D0393F100BB3E5D /* RecommendationsViewController.swift */,
 				A90DDE2B2D08BA8E00B03EF7 /* Terms&ConditionsViewController.swift */,
 			);
 			path = "Personalize Event Recommendations";
@@ -335,6 +341,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9092BC72D248D8800FF3FAF /* EventTableViewCell.xib in Resources */,
 				A9FCDB192D00D75000D169E6 /* PersonalizedEventRecommendations.storyboard in Resources */,
 				A9AD5E1B2D003E4D002FDDCF /* Assets.xcassets in Resources */,
 				A973634C2D096B2F00BBDC52 /* UserProfileSettings.storyboard in Resources */,
@@ -343,6 +350,7 @@
 				A9804CB62D231AB1004DA3AE /* OrganizerProfileSettings.storyboard in Resources */,
 				A963A7D02D0B510A002849D7 /* Signup.storyboard in Resources */,
 				A9AD5E1E2D003E4D002FDDCF /* Main.storyboard in Resources */,
+				A9092BC52D248AB100FF3FAF /* EventCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,7 +390,7 @@
 				A90DDE2C2D08BA9800B03EF7 /* Terms&ConditionsViewController.swift in Sources */,
 				A97739AC2D13BC8300ABDFBC /* User.swift in Sources */,
 				A918195E2D1D9BD400BF18C9 /* EditNameViewController.swift in Sources */,
-				A908F6642D1B030E00C83A0E /* Event.swift in Sources */,
+				A908F6642D1B030E00C83A0E /* PersonalizeEventRecommendationsViewController.swift in Sources */,
 				A97739AE2D141C2C00ABDFBC /* EditProfileViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
